@@ -1,0 +1,60 @@
+:root {
+  --tinta: #1b1530;
+  --tinta-suave: #2a2245;
+  --butaca: #8c1c3a;
+  --butaca-oscura: #6b1229;
+  --dorado: #e9b949;
+  --papel: #f7f4ee;
+  --linea: #ddd6c8;
+  --texto: #231f2e;
+  --texto-suave: #5e5870;
+  --ok: #2e7d4f;
+  --peligro: #b3261e;
+  --aviso: #b7791f;
+  --radio: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--papel);
+  color: var(--texto);
+  line-height: 1.55;
+}
+
+a {
+  color: var(--butaca);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+code {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.9em;
+  background-color: #ece6da;
+  padding: 0.05rem 0.3rem;
+  border-radius: 4px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--dorado);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition: none !important;
+  }
+}
